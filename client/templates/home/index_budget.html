@@ -1,0 +1,12 @@
+<template name="indexBudget">
+  {{#ionList class="budget-overview"}}
+    {{#ionItem path="budgetIndex"}}
+      <div class="row">
+        <div class="col budget-low"><span>HKD 0</span></div>
+        <div class="col budget-high"><span class="pull-right">15,000 HKD</span></div>
+      </div>
+      <progress class="budget-progress" max="100" value="75"> </progress>
+      <span>Monthly Budget</span>
+    {{/ionItem}}
+  {{/ionList}}
+</template>

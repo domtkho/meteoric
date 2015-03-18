@@ -1,0 +1,17 @@
+<template name="budgetIndex">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Budget</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+      {{> budgetAdjust}}
+    {{/ionContent}}
+
+  {{/ionView}}
+</template>

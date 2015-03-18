@@ -1,0 +1,39 @@
+<template name="budgetAdjust">
+  {{#ionList class="adjust-budget"}}
+    <div class="item item-divider">
+      Adjust Budget
+    </div>
+
+    {{#ionItem avatar=true}}
+      <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+      <h2>Transport</h2>
+      <div class="range range-positive budget-adjust-range">
+        <input type="range" name="transport" class="budget-adjust-input">
+      </div>
+    {{/ionItem}}
+
+    {{#ionItem avatar=true}}
+      <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+      <h2>Entertainment</h2>
+      <div class="range range-positive budget-adjust-range">
+        <input type="range" name="entertainment" class="budget-adjust-input">
+      </div>
+    {{/ionItem}}
+
+    {{#ionItem avatar=true}}
+      <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+      <h2>Food</h2>
+      <div class="range range-positive budget-adjust-range">
+        <input type="range" name="food" class="budget-adjust-input">
+      </div>
+    {{/ionItem}}
+
+    {{#ionItem avatar=true}}
+      <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+      <h2>Others</h2>
+      <div class="range range-positive budget-adjust-range">
+        <input type="range" name="others" class="budget-adjust-input">
+      </div>
+    {{/ionItem}}
+  {{/ionList}}
+</template>

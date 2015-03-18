@@ -1,0 +1,21 @@
+<template name="indexLifeFeed">
+  {{#ionList class="list-life-feed"}}
+    <div class="item item-divider item-divider-2">
+      Live Feed
+    </div>
+    <div class="item item-divider">
+      Today
+    </div>
+    {{#each feeds}}
+      <a class="item item-icon-left item-icon-right" href="#">
+        <i class="icon ion-alert-circled"></i>
+        {{this.title}}
+        <p>{{this.content}}</p>
+        <i class="icon ion-chevron-right"></i>
+      </a>
+    {{/each}}
+    <div class="item item-divider">
+      Yesterday
+    </div>
+  {{/ionList}}
+</template>

@@ -14,38 +14,17 @@
   {{/contentFor}}
 
   {{#ionView}}
+
     {{#ionSubheaderBar}}
       <div class="button-bar">
         <a class="button button-clear">Personal</a>
         <a class="button button-clear">Family</a>
       </div>
-      <!-- <div class="row">
-        <div class="col"><p>Subheader</p></div>
-        <div class="col"><p>Subheader</p></div>
-      </div> -->
     {{/ionSubheaderBar}}
 
     {{#ionContent}}
-      <div class="list">
-        <div class="item item-divider item-divider-2">
-          Live Feed
-        </div>
-        <div class="item item-divider">
-          Today
-        </div>
-
-        <a class="item item-icon-left item-icon-right" href="#">
-          <i class="icon ion-alert-circled"></i>
-          Approaching Monthly Budget
-          <p>You've spent $3,800 on food this month. You are approaching your monthly budget of $4,000!</p>
-          <i class="icon ion-chevron-right"></i>
-        </a>
-
-        <div class="item item-divider">
-          Yesterday
-        </div>
-
-      </div>
+      {{> indexBudget }}
+      {{> indexLifeFeed }}
     {{/ionContent}}
 
   {{/ionView}}

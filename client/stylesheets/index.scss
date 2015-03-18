@@ -1,0 +1,42 @@
+.budget-overview {
+  margin-bottom: 0;
+}
+
+.budget-progress {
+  margin: 0 0 5px;
+}
+
+.budget-low,
+.budget-high {
+  padding: 0;
+}
+
+.budget-high {
+  text-align: right;
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  height: 30px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #009ACE;
+    border-radius: 15px 0 0 15px;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.item-divider-2 {
+  background-color: #5d5d5d;
+  color: #FFFFFF;
+}
