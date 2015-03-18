@@ -1,7 +1,7 @@
 <template name="layout">
   {{#ionBody}}
 
-    {{#ionSideMenuContainer}}
+    {{#ionSideMenuContainer side="left"}}
       {{#ionSideMenus}}
         {{#ionSideMenu}}
           <div class="bar bar-header bar-dark">
@@ -9,14 +9,14 @@
           </div>
           <div class="content has-header">
             <div class="list">
-              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-home"></i> Overview</div>
-              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-android-options"></i> Monthly Budget</div>
-              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-paper"></i> Smart Receipts</div>
-              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-cash"></i> Cash</div>
-              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-pie"></i> Investments</div>
-              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-card"></i> Credit Cards</div>
-              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-camera"></i> Camera</div>
-              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-printer"></i> Print Statement (Month)</div>
+              <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-home"></i> Overview</a>
+              <a href="{{pathFor 'budgetIndex'}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-android-options"></i> Monthly Budget</a>
+              <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-paper"></i> Smart Receipts</a>
+              <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-cash"></i> Cash</a>
+              <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-pie"></i> Investments</a>
+              <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-card"></i> Credit Cards</a>
+              <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-camera"></i> Camera</a>
+              <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-printer"></i> Print Statement (Month)</a>
               <div class="item" data-ion-menu-close>Logout</div>
             </div>
           </div>
