@@ -1,0 +1,35 @@
+<template name="index">
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Overview</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionSubheaderBar}}
+      <div class="button-bar">
+        <a class="button button-clear">Personal</a>
+        <a class="button button-clear">Family</a>
+      </div>
+      <!-- <div class="row">
+        <div class="col"><p>Subheader</p></div>
+        <div class="col"><p>Subheader</p></div>
+      </div> -->
+    {{/ionSubheaderBar}}
+
+    {{#ionContent}}
+      <div class="padding">
+        Content goes here
+      </div>
+    {{/ionContent}}
+
+  {{/ionView}}
+</template>

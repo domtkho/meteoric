@@ -1,0 +1,37 @@
+<template name="layout">
+  {{#ionBody}}
+
+    {{#ionSideMenuContainer}}
+      {{#ionSideMenus}}
+        {{#ionSideMenu}}
+          <div class="bar bar-header bar-dark">
+            <h1 class="title">Menu</h1>
+          </div>
+          <div class="content has-header">
+            <div class="list">
+              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-home"></i> Overview</div>
+              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-android-options"></i> Monthly Budget</div>
+              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-paper"></i> Smart Receipts</div>
+              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-cash"></i> Cash</div>
+              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-pie"></i> Investments</div>
+              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-card"></i> Credit Cards</div>
+              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-camera"></i> Camera</div>
+              <div class="item item-icon-left" data-ion-menu-close><i class="icon ion-printer"></i> Print Statement (Month)</div>
+              <div class="item" data-ion-menu-close>Logout</div>
+            </div>
+          </div>
+        {{/ionSideMenu}}
+      {{/ionSideMenus}}
+
+      {{#ionSideMenuContent}}
+        {{> ionNavBar class="bar-positive"}}
+
+        {{#ionNavView}}
+          {{> yield}}
+        {{/ionNavView}}
+
+      {{/ionSideMenuContent}}
+    {{/ionSideMenuContainer}}
+
+  {{/ionBody}}
+</template>
