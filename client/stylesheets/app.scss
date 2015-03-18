@@ -3,3 +3,8 @@ $loading-font-size: 22px;
 
 @import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
 @import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
+.item-divider-2 {
+  background-color: #5d5d5d;
+  color: #FFFFFF;
+}
