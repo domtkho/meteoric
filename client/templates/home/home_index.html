@@ -1,4 +1,4 @@
-<template name="index">
+<template name="homeIndex">
   {{#contentFor "headerButtonLeft"}}
     <button class="button button-clear pull-left" data-ion-menu-toggle="left">
       {{#if isAndroid}}
@@ -9,12 +9,21 @@
     </button>
   {{/contentFor}}
 
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear pull-right" data-activate-camera>
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-camera'}}
+      {{else}}
+        {{> ionIcon icon='ios-camera'}}
+      {{/if}}
+    </button>
+  {{/contentFor}}
+
   {{#contentFor "headerTitle"}}
     <h1 class="title">Overview</h1>
   {{/contentFor}}
 
   {{#ionView}}
-
     {{#ionSubheaderBar}}
       <div class="button-bar">
         <a class="button button-clear">Personal</a>
@@ -23,8 +32,8 @@
     {{/ionSubheaderBar}}
 
     {{#ionContent}}
-      {{> indexBudget }}
-      {{> indexLifeFeed }}
+      {{> homeBudget }}
+      {{> homeLiveFeed }}
     {{/ionContent}}
 
   {{/ionView}}
