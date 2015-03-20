@@ -1,4 +1,4 @@
-$positive: #c00;
+$positive: #FFB74D;
 $loading-font-size: 22px;
 
 @import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
@@ -6,4 +6,70 @@ $loading-font-size: 22px;
 
 a {
   text-decoration: none;
+}
+
+body * {
+  color: #FFF;
+}
+
+.bar-transparent {
+  background: transparent;
+}
+
+// controls item background color
+.item {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.scroll-content {
+  // background: $positive;
+  background: #FF9800;
+  background: -moz-linear-gradient(top, #FF9800 0%, #FF8A65 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #FF9800), color-stop(100%, #FF8A65));
+  background: -webkit-linear-gradient(top, #FF9800 0%, #FF8A65 100%);
+  background: -o-linear-gradient(top, #FF9800 0%, #FF8A65 100%);
+  background: -ms-linear-gradient(top, #FF9800 0%, #FF8A65 100%);
+  background: linear-gradient(to bottom, #FF9800 0%, #FF8A65 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF9800', endColorstr='#FF8A65', GradientType=0 );
+}
+
+.snap-drawer .menu-left .snap-drawer-left {
+  width: 100%;
+}
+
+
+@media (min-width: 770px) {
+  .ionic-body {
+    position: absolute;
+    overflow: visible;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .snap-content {
+    margin-left: 266px;
+    width: 768px;
+  }
+  .snap-content .menu-toggle-icon {
+    display: none;
+  }
+
+  .snap-drawer-left {
+    position: absolute;
+  }
+  .snap-drawer-left .bar {
+    width: 768px;
+    right: auto;
+    left: auto;
+  }
+}
+@media (min-width: 1026px) {
+  .ionic-body {
+    max-width: 1024px;
+  }
+
+  .snap-content {
+    max-width: 768px;
+  }
 }
