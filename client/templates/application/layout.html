@@ -9,6 +9,7 @@
           </div>
           <div class="content has-header">
             <div class="list">
+              <a href="{{pathFor 'profileIndex'}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-person"></i> Profile</a>
               <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-home"></i> Overview</a>
               <a href="{{pathFor 'budgetIndex'}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-android-options"></i> Monthly Budget</a>
               <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-paper"></i> Smart Receipts</a>
@@ -17,7 +18,7 @@
               <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-card"></i> Credit Cards</a>
               <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-ios-camera"></i> Camera</a>
               <a href="{{pathFor ''}}" class="item item-icon-left" data-ion-menu-close><i class="icon ion-printer"></i> Print Statement (Month)</a>
-              <div class="item" data-ion-menu-close>Logout</div>
+              <div class="item" data-ion-menu-close data-action="sign-out">Logout</div>
             </div>
           </div>
         {{/ionSideMenu}}

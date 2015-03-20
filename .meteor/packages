@@ -13,3 +13,6 @@ meteoric:ionic-sass
 meteoric:ionicons-sass
 meteoric:ionic
 meteoric:camera
+accounts-password
+useraccounts:ionic
+meteoric:autoform-ionic
